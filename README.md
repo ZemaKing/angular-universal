@@ -39,3 +39,16 @@ If you want to create a new Angular project that comes with Universal/SSR enable
 If you are using Angular 17, running a SSR-enabled project also is easier than doing so with Angular 16 or lower.
 
 All you have o do with Angular 17, is run `ng serve`. It'll automatically use SSR if you enabled it via `ng add @angular/ssr` or `ng new <project-name> --ssr`.
+
+## Deployment
+
+After running npm `run build:ssr` and necessary files for deployment are:
+
+* dist folder
+* angular.json
+* package.json
+
+After on deployed machine, run next:
+
+* `npm install`
+* `npm run serve:ssr`
